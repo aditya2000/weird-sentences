@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'Harmattan', sans-serif;
+}
+
+#h1 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 4em;
+    background-color: rgb(37, 146, 235);
+    color: white;
+    padding: .5em;
+    box-shadow: 1px 1px 1px 1px rgb(206, 204, 204);
+}
+
+#generate {
+    font-family: 'Harmattan', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    padding: .5em;
+    margin: .5em;
+    box-shadow: 1px 1px 1px 1px rgb(206, 204, 204);
+    background-color: rgb(255, 0, 64);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+#tweet p {
+    box-shadow: 1px 1px 1px 1px rgb(206, 204, 204);
+    margin: 2em;
+    margin-left: 15em;
+    margin-right: 15em;
+    padding: 2em;
+    border-radius: 2px;
+    font-size: 1.5em;
+}
