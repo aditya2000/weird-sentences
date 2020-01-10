@@ -1,6 +1,6 @@
 let tweets = []
 function generate() {
-    var data = {
+    /*var data = {
         "start": ["#tweet#"],
         "tweet": ["#NP# #VP#"],
         "NP": ["#Pronoun#", "#Noun#", "#Determiner# #Nominal#"],
@@ -12,6 +12,17 @@ function generate() {
         "Noun": ["John Keating", "Bob Harris", "Bruce Wayne", "John Constantine", "Gotham", "Asgard", "Diagon Alley", "Narnia"],
         "Determiner": ["the", "a", "an", "this", "these", "that", "there"],
         "Preposition": ["from", "to", "on", "near", "with"]
+    }*/
+    
+    var data = {
+    	"start": ["#NP# #VP#."],
+    	"NP": ["#Det# #N#", "#Det# #N# that #VP#", "#Det# #Adj# #N#"],
+    	"VP": ["#Vtrans# #NP#", "#Vintr#"],
+    	"Det": ["The", "This", "That"],
+    	"N": ["John Keating", "Bob Harris", "Bruce Wayne", "John Constantine", "Tony Stark", "John Wick", "Sherlock Holmes", "King Leonidas"],
+    	"Adj": ["cool", "lazy", "amazed", "sweet"],
+    	"Vtrans": ["computes", "examines", "helps", "prefers", "sends", "plays with", "messes up with"],
+    	"Vintr": ["coughs", "daydreams", "whines", "slobbers", "appears", "disappears", "exists", "cries", "laughs"]
     }
     
     let grammar = tracery.createGrammar(data);
